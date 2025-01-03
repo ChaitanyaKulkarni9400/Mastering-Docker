@@ -296,11 +296,13 @@ db.bios.insertMany([
 
 
 
-######################################################################
+#######################################################################################################################
+
+Docker Bind Mounts
 
 docker run --rm -d --name app1 -v /var/run/docker.sock:/var/run/docker.sock --network  none kiran2361993/troubleshootingtools:v1
 
-docker create volume create portainerdata
+docker volume create portainerdata
 
 docker run -d -p 8000:8000 -p 9443:9443 --name portainer \
         --restart=always \
